@@ -37,7 +37,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@ad1d2e93beb0ec418817dbbb5b6eb0da403e39a6
+        uses: docker/build-push-action@cf25934f0f39e54ba983ef1b804a39d65384e916
         with:
           context: packages/kitten-game
           push: true
